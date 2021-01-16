@@ -64,8 +64,6 @@ from the earlier run of the experiment saved in `DATA_ROOT/experiments/EXPT_NAME
 - Run `run_cqa.py --expt_name EXPT_NAME --resume` to evaluate latest snapshot saved in
 from the previously trained model `DATA_ROOT/experiments/EXPT_NAME`
 
-- 
-
 ## Computing Detailed Metrics:
 
 - Run `compute_metrics.py --expt_name EXPT_NAME` to compute accuracy for each question and image-type. (Optional: Use `--epoch EPOCH` to 
