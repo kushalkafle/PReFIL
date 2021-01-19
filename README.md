@@ -17,14 +17,14 @@ This repository provides code and pretrained models for the PReFIL algorithm des
 We made some minor optimizations to the code (No hyperparameters are changed from the paper). 
 As a result, the numbers obtained from this repo are slightly better than reported in the paper. 
 
-| Paper Vs. Repo     |               |  Paper | Repo  |   |  
+| Paper Vs. Repo     |               |  Paper | Repo  |    
 |----------|---------------|---|---|---|  
 |    DVQA  |  |   |   |   |  
-|          | Test Familiar | 96.37  | 96.93  |   |  
-|          | Test Novel    | 96.53 |  96.99 |   |  
+|          | Test Familiar | 96.37  | 96.93  |    
+|          | Test Novel    | 96.53 |  96.99 |   
 | FigureQA |               |   |   |   |  
-|          | Validation 1  | 94.84  | 96.56  |   |  
-|          | Validation 2  | 93.26 | 95.31  |   |
+|          | Validation 1  | 94.84  | 96.56  |  
+|          | Validation 2  | 93.26 | 95.31  |   
 
 
 # Requirements and Repo Setup

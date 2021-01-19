@@ -1,12 +1,12 @@
 # Data
 
-The question-answer files are pre-processed to follow similar fieldnames/format. 
-We provide direct download links to download links to download and set them up. 
+The question-answer files are pre-processed so that they have similar fieldnames/format for easier loading. 
+We provide direct download links to download the pre-processed qa pairs. 
 
 ## Download and Setup DVQA
 
 Run the self-contained `bash get_DVQA_data.sh` from your data root directory to download and setup images and pre-processed qa files. 
-The qa files are already encoded with appropriate OCR based on the dynamic encoding described in the paper.
+The qa files are also already encoded with appropriate OCR based on the dynamic encoding described in the paper.
 
 NOTE: In this repo, we use the `val_` prefix to denote availability of ground truth labels. 
 Hence, the names for DVQA splits are changed as follows:
