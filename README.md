@@ -18,13 +18,13 @@ We made some minor optimizations to the code (No hyperparameters are changed fro
 As a result, the numbers obtained from this repo are slightly better than reported in the paper. 
 
 | Paper Vs. Repo     |               |  Paper | Repo  |    
-|----------|---------------|---|---|---|  
+|----------|---------------|---|---|  
 |    DVQA  |  |   |   |   |  
-|          | Test Familiar | 96.37  | 96.93  |    
-|          | Test Novel    | 96.53 |  96.99 |   
+|          | Test Familiar (val_easy) | 96.37  | 96.93  |    
+|          | Test Novel (val_hard)   | 96.53 |  96.99 |   
 | FigureQA |               |   |   |   |  
-|          | Validation 1  | 94.84  | 96.56  |  
-|          | Validation 2  | 93.26 | 95.31  |   
+|          | Validation 1 (same colors)  | 94.84  | 96.56  |  
+|          | Validation 2 (alternated colors) | 93.26 | 95.31  |   
 
 
 # Requirements and Repo Setup
@@ -56,17 +56,17 @@ You can start by copying config_template.py to config_<YOUR_EXPT_NAME>.py and ma
 
 ## Resuming training
 
-- Run `run_cqa.py --expt_name EXPT_NAME --resume` to resume model training from the latest snapshot saved in
+- Run `python run_cqa.py --expt_name EXPT_NAME --resume` to resume model training from the latest snapshot saved in
 from the earlier run of the experiment saved in `DATA_ROOT/experiments/EXPT_NAME`
 
 ## Evaluating previously trained model
 
-- Run `run_cqa.py --expt_name EXPT_NAME --resume` to evaluate latest snapshot saved in
+- Run `python run_cqa.py --expt_name EXPT_NAME --resume` to evaluate latest snapshot saved in
 from the previously trained model `DATA_ROOT/experiments/EXPT_NAME`
 
 ## Computing Detailed Metrics:
 
-- Run `compute_metrics.py --expt_name EXPT_NAME` to compute accuracy for each question and image-type. (Optional: Use `--epoch EPOCH` to 
+- Run `python compute_metrics.py --expt_name EXPT_NAME` to compute accuracy for each question and image-type. (Optional: Use `--epoch EPOCH` to 
  compute metrics for a different epoch than the latest one.)
 
 # Citation
@@ -82,7 +82,7 @@ If you use PReFIL, or the code in this repo, please cite:
 }
 ```
 
-If you use DVQA in your work, please cite:
+Plus, if you use the DVQA dataset in your work, please cite:
 
 ```
 @inproceedings{kafle2018dvqa,
