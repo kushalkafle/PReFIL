@@ -33,9 +33,9 @@ The repo has minimal requirements. All you should really need are `CUDA 10.2`, `
 However, we also provide the exact conda environment that we tested the code on. To replicate, simply edit the `prefix` parameter 
 in the `requirement.yml` and simply run `conda env create -f requirements.yml`, followed by `conda activate prefil`. 
 
-# Setting up Data
+# Data Setup and Pretrained Models
 
-Head over to the `README` under data to download and setup data and pretrained models
+Head over to the `README` under data to download and setup data and also access pretrained model weights
 
 # Training, Resuming and Evaluating models
 
